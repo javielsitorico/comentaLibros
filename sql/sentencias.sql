@@ -30,11 +30,21 @@ CREATE TABLE comentarios (
     usuarioId INT NOT NULL,
     imagen varchar(255),
     PRIMARY KEY (`id`),
-    FOREIGN KEY (`usuarioId`) REFERENCES `usuarios`(`id`)
+    FOREIGN KEY(usuarioId) REFERENCES usuarios(id) ON DELETE CASCADE
 );
- 
+
 INSERT INTO ROLES(descripcion) VALUES ("admin");
 INSERT INTO ROLES(descripcion) VALUES ("normal");
+
+CREATE TABLE regOperaciones (
+    id INT AUTO_INCREMENT,
+    usuarioId INT NOT NULL,
+    operacion VARCHAR(35),
+    parametros VARCHAR(50),
+    timestamp DATETIME,
+    PRIMARY KEY(id),
+    FOREIGN KEY(usuarioId) REFERENCES usuarios(id) ON DELETE CASCADE
+);
  
 INSERT INTO USUARIOS(usuario, passwd, mail,rolId,tmpRegistro) 
      VALUES ('admin',
