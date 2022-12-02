@@ -47,7 +47,7 @@ if admin and estasDentro:
      <nav class="navegacion">
        <a class="enlace" href="paginaInsertar.py">Insertar Comentario</a>
        <a class="enlace" href="logout.py">Log Out</a>
-       <a class="enlace" href="administrarUsuarios.py">Administrar Usuarios</a>
+       <a class="enlace" href="paginaLibros.py">Ver Comentarios</a>
      '''
      print(codigoHTML.cabeceraHTML.format('Pagina de Libros', '', navegacion + '</nav>', 'Bienvenido, Admin', 'Administrar Usuarios'))
 

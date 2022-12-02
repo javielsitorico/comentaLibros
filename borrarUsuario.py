@@ -5,7 +5,6 @@ import cgi, os, cgitb
 from baseDeDatos import cursor, baseDeDatos
 import codigoHTML
 
-print('Content-Type: text/html\n')
 cgitb.enable()
 formulario = cgi.FieldStorage()
 

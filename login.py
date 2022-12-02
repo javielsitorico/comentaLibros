@@ -45,5 +45,5 @@ if existe:
         
 if not existe:
     print("Content-Type: text/html\n")
-    print(codigoHTML.cabeceraHTML.format("Error", '<meta http-equiv="Refresh" content="2; URL=error.html"/>', '', "Usuario o contrasena no invaldio(s)","Redirigiendo"))
+    print(codigoHTML.cabeceraHTML.format("Error", '<meta http-equiv="Refresh" content="2; URL=error.html"/>', '', "Usuario o contrasena no valdio(s)","Redirigiendo"))
     print(codigoHTML.finalHTML)
